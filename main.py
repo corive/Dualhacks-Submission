@@ -1,12 +1,11 @@
-from flask import Flask
+from flask import Flask #Flask is for the API
+import psycopg2 #For using PostgreSQL
+
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "we def started this hackathon on time"
-
-@app.route("/hyein")
-def i_think_you_can_name_this_function_anything():
-    return "mul juseyo!"
+    return 200 #Returning 200 is considered to be a HTTP response and in this case 200 means the connection is OK.
 
 app.run(debug=True)
+
