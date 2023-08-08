@@ -1,11 +1,9 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Basic styling for the header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -20,7 +18,6 @@
     text-align: center;
 }
 
-/* Dropdown styling */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -86,13 +83,11 @@
     display: block;
 }
 
-/* Basic styling for the main content */
 .content {
     margin: 20px;
     padding: 20px;
 }
 
-/* Styles for the background container */
 .background-container {
     background-image: url('https://hips.hearstapps.com/hmg-prod/images/book-quotes-1531945007.jpg');
     background-size: cover;
@@ -103,7 +98,6 @@
     justify-content: center;
 }
 
-/* Styles for the form */
 form {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
@@ -143,9 +137,42 @@ button[type="button"]:hover {
     background-color: #1d7d33;
 }
 
-/* Additional styles for the submit button */
 .submit-button {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.about-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px); 
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.about-section:hover {
+    transform: translateY(-5px);
+}
+
+.about-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-content {
+    font-size: 16px;
+    color: #555;
 }
