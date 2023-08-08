@@ -3,7 +3,7 @@ import psycopg2 #For using PostgreSQL
 import urllib.parse as up #For PostreSQL
 import os #For using .env
 from dotenv import load_dotenv #For using .env
-
+from flask import Flask, render_template, send_from_directory
 
 app = Flask(__name__) #Creating a Flask object
 load_dotenv() #Loading the info from the .env file
