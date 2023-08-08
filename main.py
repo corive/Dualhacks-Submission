@@ -14,7 +14,7 @@ url = up.urlparse(os.environ["DB_URL"])
 
 @app.route("/")
 def hello():
-    return 200 #Returning 200 is considered to be a HTTP response and in this case 200 means the connection is OK.
+    return "200 - OK" #Returning 200 is considered to be a HTTP response and in this case 200 means the connection is OK.
 
 @app.route('/addquote', methods=['POST'])
 def receive_data():
